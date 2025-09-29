@@ -21,6 +21,9 @@ namespace TaxCalculator.Api.Controllers
             _mediator = mediator;
         }
 
+        /// <summary>
+        ///     Returns a tax report according to the provided annual salary value.
+        /// </summary>
         [HttpGet]
         public async Task<TaxReport> GetTaxReport(
             [Range(0, int.MaxValue,
@@ -30,6 +33,13 @@ namespace TaxCalculator.Api.Controllers
             return await _mediator.Send(new CreateTaxReportCommand { GrossAnnualSalary = salary });
         }
 
+        /// <summary>
+        ///     Returns a tax report according to the provided annual salary value.
+        /// </summary>
+        /// <remarks>
+        ///     Does not create any resource in the DB in the current implementation.
+        ///     More likely to be a GET method. Created as POST according to the task.
+        /// </remarks>
         [HttpPost]
         public async Task<TaxReport> CreateTaxReport([Range(0, int.MaxValue,
                 ErrorMessage = "The salary value should be greater than or equal to 0.")]

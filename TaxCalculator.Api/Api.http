@@ -1,6 +1,9 @@
 @Api_HostAddress = http://localhost:5067
 
-GET {{Api_HostAddress}}/tax-calculator/
+GET {{Api_HostAddress}}/api/tax-calculator?salary=25000
 Accept: application/json
+###
 
+POST {{Api_HostAddress}}/api/tax-calculator?salary=45000
+Accept: application/json
 ###
