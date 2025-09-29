@@ -1,5 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-using TaxCalculator.Application.Abstractions;
+﻿using TaxCalculator.Application.Abstractions;
 using TaxCalculator.Domain;
 using TaxCalculator.Persistence.Abstractions;
 using TaxCalculator.Persistence.Extensions;

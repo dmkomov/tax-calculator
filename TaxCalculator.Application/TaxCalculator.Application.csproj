@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Domain\TaxCalculator.Domain.csproj" />
+    <ProjectReference Include="..\TaxCalculator.Domain\TaxCalculator.Domain.csproj" />
     <ProjectReference Include="..\TaxCalculator.Persistence\TaxCalculator.Persistence.csproj" />
   </ItemGroup>
 

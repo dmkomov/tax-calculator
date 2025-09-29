@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -16,6 +16,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Domain\TaxCalculator.Domain.csproj" />
     <ProjectReference Include="..\TaxCalculator.Application\TaxCalculator.Application.csproj" />
+    <ProjectReference Include="..\TaxCalculator.Domain\TaxCalculator.Domain.csproj" />
     <ProjectReference Include="..\TaxCalculator.Persistence\TaxCalculator.Persistence.csproj" />
   </ItemGroup>
 
