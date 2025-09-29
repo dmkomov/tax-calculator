@@ -10,13 +10,10 @@
 
   <ItemGroup>
     <PackageReference Include="MediatR" Version="13.0.0" />
-    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.21.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Domain\TaxCalculator.Domain.csproj" />
     <ProjectReference Include="..\TaxCalculator.Application\TaxCalculator.Application.csproj" />
-    <ProjectReference Include="..\TaxCalculator.Domain\TaxCalculator.Domain.csproj" />
     <ProjectReference Include="..\TaxCalculator.Persistence\TaxCalculator.Persistence.csproj" />
   </ItemGroup>
 
