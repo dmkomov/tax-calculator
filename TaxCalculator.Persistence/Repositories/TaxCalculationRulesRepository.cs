@@ -1,4 +1,5 @@
-﻿using TaxCalculator.Persistence.Abstractions;
+﻿using Microsoft.EntityFrameworkCore;
+using TaxCalculator.Persistence.Abstractions;
 using TaxCalculator.Persistence.Models;
 
 namespace TaxCalculator.Persistence.Repositories
@@ -7,7 +8,7 @@ namespace TaxCalculator.Persistence.Repositories
     {
         public IQueryable<TaxCalculationRule> GetCalculationRules()
         {
-            return dbContext.TaxCalculationRules.OrderBy(x => x.Priority);
+            return dbContext.TaxCalculationRules.OrderBy(x => x.Priority).AsNoTracking();
         }
     }
 }
